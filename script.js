@@ -25,7 +25,7 @@ function EscrevendoInput() {
 
         //"tolowercase é para fazer com que independente de a letra está minuscula ou maiuscula, irá encontrar"//       
         if (input.value.toLowerCase() === contacts[i].name.toLowerCase()) {
-            p.innerHTML = contacts[i].number
+            p.innerHTML = "Contato Encontrado, Nome: " + contacts[i].name + " Telefone: " + contacts[i].number
 
             break //parar o for quando encontrar//
 

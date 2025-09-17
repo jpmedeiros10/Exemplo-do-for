@@ -23,11 +23,13 @@ function EscrevendoInput() {
 
     for (let i = 0; i < contacts.length; i++) {
 
-    //"tolowercase é para fazer com que independente de a letra está minuscula ou maiuscula, irá encontrar"//       
+        //"tolowercase é para fazer com que independente de a letra está minuscula ou maiuscula, irá encontrar"//       
         if (input.value.toLowerCase() === contacts[i].name.toLowerCase()) {
             p.innerHTML = contacts[i].number
 
-        }else  {
+            break //parar o for quando encontrar//
+
+        } else {
             p.innerHTML = "Nome Inválido, Tente outro nome"
         }
 

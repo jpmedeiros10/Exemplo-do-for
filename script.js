@@ -12,11 +12,11 @@ function EscrevendoInput() {
 
     //usando i++ porque ai vai mudando de posição o momento que vai somando (parecido com o i = i +1)//
 
-    for (let i = 0; i < contacts.length; i++) {
+    for (const contact of contacts) {
 
         //"tolowercase é para fazer com que independente de a letra está minuscula ou maiuscula, irá encontrar"//       
-        if (input.value.toLowerCase() === contacts[i].name.toLowerCase()) {
-            p.innerHTML = "Contato Encontrado, Nome: " + contacts[i].name + " Telefone: " + contacts[i].number
+        if (input.value.toLowerCase() === contact.name.toLowerCase()) {
+            p.innerHTML = "Contato Encontrado, Nome: " + contact.name + " Telefone: " + contact.number
 
             break //parar o for quando encontrar//
 
@@ -37,4 +37,4 @@ while (i < contacts.length) {
     EscrevendoInput()
     i++
 }
-
+dddd

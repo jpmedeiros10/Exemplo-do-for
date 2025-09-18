@@ -1,13 +1,4 @@
 
-
-
-
-let button = document.querySelector("button")
-
-
-
-
-
 function EscrevendoInput() {
     const contacts = [
         { name: 'Rodolfo', number: '(19) 8459-6254' },
@@ -37,5 +28,13 @@ function EscrevendoInput() {
 }
 
 
-button.addEventListener("click", EscrevendoInput)
+let input = document.querySelector("input")
+let p = document.querySelector("p")
+let button = document.querySelector("button")
+let i = 0
+
+while (i < contacts.length) {
+    EscrevendoInput()
+    i++
+}
 
